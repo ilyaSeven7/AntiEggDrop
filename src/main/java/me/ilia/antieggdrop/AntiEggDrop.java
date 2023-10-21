@@ -1,4 +1,5 @@
 package me.ilia.antieggdrop;
+import net.kyori.adventure.text.minimessage.MiniMessage;
 import org.bukkit.Material;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -10,7 +11,7 @@ public final class AntiEggDrop extends JavaPlugin implements Listener {
     @Override
     public void onEnable() {
         // Plugin startup logic
-        getServer().getConsoleSender().sendMessage("Plugin Has Been Enable!!");
+        getServer().getConsoleSender().sendMessage(MiniMessage.miniMessage().deserialize("<aqua>ilyaSeven7</aqua> <dark_gray>>>></dark_gray> <white>AntiEggDrop</white> <green>Has Been Enable!</green>"));
         getServer().getPluginManager().registerEvents(this, this);
     }
 
@@ -18,7 +19,7 @@ public final class AntiEggDrop extends JavaPlugin implements Listener {
     @Override
     public void onDisable() {
         // Plugin shutdown logic
-        getServer().getConsoleSender().sendMessage("Plugin Has Been Disable!!");
+        getServer().getConsoleSender().sendMessage("<aqua>ilyaSeven7</aqua> <dark_gray>>>></dark_gray> <white>AntiEggDrop</white> <dark_red>Has Been Disable!</dark_red>");
     }
     @EventHandler
     public void OnEggDrop(ItemSpawnEvent event){
