@@ -1,0 +1,4 @@
+name: AntiEggDrop
+version: '${version}'
+main: me.ilia.antieggdrop.AntiEggDrop
+api-version: '1.18'
