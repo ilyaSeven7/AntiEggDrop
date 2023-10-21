@@ -19,7 +19,7 @@ public final class AntiEggDrop extends JavaPlugin implements Listener {
     @Override
     public void onDisable() {
         // Plugin shutdown logic
-        getServer().getConsoleSender().sendMessage("<aqua>ilyaSeven7</aqua> <dark_gray>>>></dark_gray> <white>AntiEggDrop</white> <dark_red>Has Been Disable!</dark_red>");
+        getServer().getConsoleSender().sendMessage(MiniMessage.miniMessage().deserialize("<aqua>ilyaSeven7</aqua> <dark_gray>>>></dark_gray> <white>AntiEggDrop</white> <dark_red>Has Been Disable!</dark_red>"));
     }
     @EventHandler
     public void OnEggDrop(ItemSpawnEvent event){
