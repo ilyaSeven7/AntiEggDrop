@@ -23,7 +23,6 @@ public final class AntiEggDrop extends JavaPlugin implements Listener {
     @EventHandler
     public void OnEggDrop(ItemSpawnEvent event){
         if (event.getEntity().getItemStack().getType().equals(Material.EGG)){
-            getServer().getConsoleSender().sendMessage("Doesn't Work");
             event.setCancelled(true);
         }
     }
